@@ -18,8 +18,9 @@ main{
 .container{
     background-color: black;
     width: 80%;
-    height: 617px;
+    height: 611px;
     margin-top: 50px;
+    margin-bottom: 10%;
     padding: 30px;
     border-radius: 25px;
 }
@@ -41,7 +42,7 @@ main{
     
     margin-left: 10%;
 }
-.banners button{
+.btn{
     margin-left: 10%;
     border: none;
     background-color:#DD0000;
@@ -52,7 +53,7 @@ main{
     font-weight: 500;
     cursor: pointer;
 }
-button:hover{
+.btn:hover{
    
     background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
     animation: 5s linear infinite;
@@ -67,3 +68,45 @@ button:hover{
 /* -------------------
 -----------first section end------------
 --------------------------------------------- */
+
+.button-group{
+    display: flex;
+    flex-direction: column;
+} 
+
+.container-2{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+/* ----------------------------- */
+
+.category{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+.product{
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);;
+}
+
+.product-banner img{
+    width: 350px;
+    height: 200px;
+    margin:50px 50px 0 50px;
+    /* background: #eee; */
+}
+.product-detail{
+    margin-left: 10%;
+}
+
+
+
