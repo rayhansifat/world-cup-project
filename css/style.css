@@ -41,16 +41,17 @@ main{
 .banners p{
     
     margin-left: 10%;
+    margin-bottom: 30px;
 }
 .btn{
     margin-left: 10%;
-    border: none;
+    text-decoration: none;
     background-color:#DD0000;
     padding: 15px 30px;
     border-radius: 10px;
     color: white;
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 400;
     cursor: pointer;
 }
 .btn:hover{
@@ -85,21 +86,29 @@ main{
 } 
 .btwn-1{
     background-color: white;
-    border: none;
+    text-decoration: none;
+    text-align: center;
     color: black;
-    width: 100%;
+    width: 80%;
     padding: 20px;
     margin-bottom: 15%;
     border-radius: 10px;
 }
 .btwn-2{
     background-color: #DD0000;
-    border: none;
+   text-decoration: none;
+   text-align: center;
     color: white;
-    width: 100%;
+    width: 80%;
     padding: 20px;
     margin-bottom: 15%;
     border-radius: 10px;
+}
+.btwn-2:hover{
+   
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    animation: 5s linear infinite;
+     
 }
 .container-2{
     display: flex;
@@ -119,6 +128,7 @@ main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
+    margin-bottom: 100px;
 }
 .product{
     background-color: white;
@@ -139,3 +149,34 @@ main{
              second section end
          ----------------------------- --> */
 
+
+/* -------------------------------
+           footer section
+ -----------------------------------*/
+
+.footer-content h1{
+   padding-top: 100px;
+   font-size: 50px;
+} 
+
+hr{ 
+    text-align: center;
+    width: 70%;
+    margin-top: 50px;
+    margin-bottom: 55px;
+    
+}
+ .footer-content{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-bottom: 100px;
+   
+    
+ }
+ .footer-details a{
+    text-decoration: none;
+    color:#B9B9B9;
+    margin: 0 30px;
+    padding-left: 20px;
+ }
