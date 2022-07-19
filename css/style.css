@@ -69,24 +69,51 @@ main{
 -----------first section end------------
 --------------------------------------------- */
 
+
+/* <!----------------------------
+             second section start
+         ----------------------------- --> */
 .button-group{
     display: flex;
     flex-direction: column;
+    
+    align-self: flex-start;
+    margin-right: 50px;
+   background-color: black;
+    
+   
 } 
-
+.btwn-1{
+    background-color: white;
+    border: none;
+    color: black;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15%;
+    border-radius: 10px;
+}
+.btwn-2{
+    background-color: #DD0000;
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15%;
+    border-radius: 10px;
+}
 .container-2{
     display: flex;
+    width: 100%;
+
 }
+.button-group{
+    background: black;
+    border-radius: 10px;
+    width: 10%;
+    padding: 50px;
+} 
 
 
-
-
-
-
-
-
-
-/* ----------------------------- */
 
 .category{
     display: grid;
@@ -102,11 +129,13 @@ main{
     width: 350px;
     height: 200px;
     margin:50px 50px 0 50px;
-    /* background: #eee; */
+    
 }
 .product-detail{
     margin-left: 10%;
-}
+} 
 
-
+/* <!----------------------------
+             second section end
+         ----------------------------- --> */
 
