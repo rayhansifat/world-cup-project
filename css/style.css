@@ -46,6 +46,7 @@ main{
     margin-bottom: 30px;
 }
 .btn{
+    
     margin-left: 10%;
     text-decoration: none;
     background-color:#DD0000;
@@ -178,32 +179,38 @@ main{
              second section end
          ----------------------------- --> */
 
-         .blogs{
-            background-color: white;
-            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-            border-radius: 10px;
-        }
-        .vs{
-            margin-top: 4em;
-        }
-        .product2{
-            display: flex;
-        }
+.blogs{
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 10px;
+}
+
+.vs{
+     margin-top: 4em;
+}
+
+.product2{
+    display: flex;
+}
         
-        .product-banner2{
-            width: 100%;
-        }
+.product-banner2{
+    width: 100%;
+
+}
         
-        .product-banner2 img{
-            width: 50%;
-            margin:50px 50px 20px 50px;
-        }
-        .blogs h2{
-            text-align: center;
-        }
-        .blogs p{
-            text-align: center;
-        }
+.product-banner2 img{
+
+    width: 50%;
+    margin:50px 50px 20px 50px;
+}
+
+.blogs h2{
+    text-align: center;
+}
+        
+.blogs p{
+    text-align: center;
+}
         
 
 /* -------------------------------
@@ -240,33 +247,26 @@ hr{
            footer section end
  -----------------------------------*/
 
- /* media queries for mobile devices  */
+ /*-----------------------
+  media queries for mobile devices
+  ---------------------------------  */
   @media only screen and (max-width:851px) {
-    .container{
-        background-color: black;
-        background-repeat: no-repeat;
-        width: 60%;
-        height: 611px;
-        margin-top: 30px;
-        margin-bottom: 10%;
-        margin-right: 15px;
-        padding: 15px;
-        border-radius: 15px;
-    } 
+    .container, .main-sec, .footer-content{
+        width: 100%;
+      }
     .container-banner{
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: column; 
-    } 
+        flex-direction: column;
+    }
     .banners img{
-    
-        width: 75.5%;
+        display: block;
+        width: 68%;
         margin-left: 10%;
         margin-top: 37px;
         
-    }  
+    }
     .banners h1{
-        font-size: 25px;
+        font-size: 30px;
         margin-top: 10%;
         margin-left: 10%;  
     }
@@ -280,38 +280,35 @@ hr{
         font-size: 25px;
         font-weight: 100;
         cursor: pointer;
-    } 
+    }
     .container-2{
-        display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 1em;
-     }
-}
-/* -*------------------------------- */
-/* 
-.blogs{
-    background-color: white;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    border-radius: 10px;
-}
-.vs{
-    margin-top: 4em;
-}
-.product2{
-    display: flex;
-}
+        display: flex;
+        flex-direction: column;
+    }
+    .button-group{
+        width: 50%;
+        margin-left: 12%;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .category{
+        grid-template-columns: repeat(1, 1fr);
+    }
 
-.product-banner2{
-    width: 100%;
-}
 
-.product-banner2 img{
-    width: 50%;
-    margin:50px 50px 20px 50px;
+    .footer-details{
+        display: flex;
+        flex-direction: column;
+    }
+    .product-banner img{
+    width: 300px;
+    height: 200px;
+    margin:50px 50px 10px 50px;
+    }
+    
+
 }
-.blogs h2{
-    text-align: center;
-}
-.blogs p{
-    text-align: center;
-} */
