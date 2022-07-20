@@ -17,12 +17,14 @@ main{
 --------------------------------------------- */
 .container{
     background-color: black;
+    background-repeat: no-repeat;
     width: 80%;
     height: 611px;
     margin-top: 50px;
     margin-bottom: 10%;
     padding: 30px;
     border-radius: 25px;
+    
 }
 .container-banner{
     display: flex;
@@ -60,6 +62,9 @@ main{
     animation: 5s linear infinite;
      
 }
+.right-arrow{
+    margin-left: 10px;
+}
 .banners img{
     
     width: 80%;
@@ -77,13 +82,26 @@ main{
 .button-group{
     display: flex;
     flex-direction: column;
-    
     align-self: flex-start;
     margin-right: 50px;
-   background-color: black;
+    background-color: black;
+    border-radius: 10px;
+    width: 10%;
+    align-items: center;
     
    
 } 
+#upcoming-match{
+    background-color: #DD0000;
+    width: 85%;
+    color: white;
+}
+#upcoming-match:hover{
+   
+        background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+        animation: 5s linear infinite;
+         
+    }
 .btwn-1{
     background-color: white;
     text-decoration: none;
@@ -93,6 +111,7 @@ main{
     padding: 20px;
     margin-bottom: 15%;
     border-radius: 10px;
+    
 }
 .btwn-2{
     background-color: #DD0000;
@@ -116,12 +135,11 @@ main{
 
 }
 .button-group{
-    background: black;
-    border-radius: 10px;
-    width: 10%;
+    /* background: black;
+    border-radius: 10px; 
+    width: 10%; */
     padding: 50px;
 } 
-
 
 
 .category{
@@ -129,26 +147,64 @@ main{
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin-bottom: 100px;
+    
 }
 .product{
     background-color: white;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 10px;
 }
 
 .product-banner img{
     width: 350px;
     height: 200px;
-    margin:50px 50px 0 50px;
+    margin:50px 50px 10px 50px;
     
 }
 .product-detail{
     margin-left: 10%;
+    margin-bottom: 20px;
 } 
+
+.rating .fa-clock{
+    margin-right: 5px;
+}
+.rating .fa-comment-dots{
+    margin-left: 15px;
+    margin-right: 5px;
+}
 
 /* <!----------------------------
              second section end
          ----------------------------- --> */
 
+         .blogs{
+            background-color: white;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+            border-radius: 10px;
+        }
+        .vs{
+            margin-top: 4em;
+        }
+        .product2{
+            display: flex;
+        }
+        
+        .product-banner2{
+            width: 100%;
+        }
+        
+        .product-banner2 img{
+            width: 50%;
+            margin:50px 50px 20px 50px;
+        }
+        .blogs h2{
+            text-align: center;
+        }
+        .blogs p{
+            text-align: center;
+        }
+        
 
 /* -------------------------------
            footer section
@@ -180,3 +236,82 @@ hr{
     margin: 0 30px;
     padding-left: 20px;
  }
+/* -------------------------------
+           footer section end
+ -----------------------------------*/
+
+ /* media queries for mobile devices  */
+  @media only screen and (max-width:851px) {
+    .container{
+        background-color: black;
+        background-repeat: no-repeat;
+        width: 60%;
+        height: 611px;
+        margin-top: 30px;
+        margin-bottom: 10%;
+        margin-right: 15px;
+        padding: 15px;
+        border-radius: 15px;
+    } 
+    .container-banner{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column; 
+    } 
+    .banners img{
+    
+        width: 75.5%;
+        margin-left: 10%;
+        margin-top: 37px;
+        
+    }  
+    .banners h1{
+        font-size: 25px;
+        margin-top: 10%;
+        margin-left: 10%;  
+    }
+    .btn{
+        margin-left: 10%;
+        text-decoration: none;
+        background-color:#DD0000;
+        padding: 7px 8px;
+        border-radius: 5px;
+        color: white;
+        font-size: 25px;
+        font-weight: 100;
+        cursor: pointer;
+    } 
+    .container-2{
+        display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1em;
+     }
+}
+/* -*------------------------------- */
+/* 
+.blogs{
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 10px;
+}
+.vs{
+    margin-top: 4em;
+}
+.product2{
+    display: flex;
+}
+
+.product-banner2{
+    width: 100%;
+}
+
+.product-banner2 img{
+    width: 50%;
+    margin:50px 50px 20px 50px;
+}
+.blogs h2{
+    text-align: center;
+}
+.blogs p{
+    text-align: center;
+} */
